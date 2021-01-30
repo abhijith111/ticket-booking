@@ -2,7 +2,7 @@ getCurrentStatus();
 
 function getCurrentStatus() {
     $.ajax({
-        url: "http://localhost:3000",
+        url: "https://ticket-booking1.herokuapp.com",
         method: "GET",
         success: (response) => {
             document.getElementById("remainingCount").innerHTML =
