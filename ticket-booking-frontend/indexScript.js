@@ -2,7 +2,7 @@ getCurrentStatus();
 
 function getCurrentStatus() {
     $.ajax({
-        url: "https://ticket-booking1.herokuapp.com/",
+        url: "https://ticket-booking1.herokuapp.com",
         method: "GET",
         success: (response) => {
             document.getElementById("remainingCount").innerHTML =
@@ -28,7 +28,7 @@ function allocateTicket() {
         );
     } else {
         $.ajax({
-            url: "http://localhost:3000/allocate" + count,
+            url: "https://ticket-booking1.herokuapp.com/allocate" + count,
             method: "POST",
             success: (response) => {
                 getCurrentStatus();
@@ -57,7 +57,7 @@ function cancelTicket() {
         );
     } else {
         $.ajax({
-            url: "http://localhost:3000/deallocate" + count,
+            url: "https://ticket-booking1.herokuapp.com/deallocate" + count,
             method: "POST",
             success: (response) => {
                 getCurrentStatus();
