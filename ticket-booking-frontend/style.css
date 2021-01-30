@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 50px;
+    width: 100%;
+    background-color: lightblue;
+    text-align: center;
+    padding-top: 20px;
+}
+.container{
+    display: flex;
+    align-items: center;
+}
+
+
+.book__tickets{
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    width: 50%;
+    height: 500px;
+    margin: 2em;
+    border-radius: 10px;
+}
+.input__field{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+    height: 6em;
+}
+.input__field>label{
+    font-size: larger;
+    font-weight: bold;
+}
+input{
+    border-radius: 8px ;
+}
+.input__field>input{
+    height: 5em;
+    width: 100%;
+}
+.book__tickets>input{
+    width: 60%;
+    height: 4em;
+    margin: 1em 3em;
+    font-size: large;
+}
+.current__tickets{
+    background-color: lightgrey;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    font-size: 2em;
+    margin: 2em;
+    border-radius: 10px;
+}
